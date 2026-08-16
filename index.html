@@ -289,7 +289,94 @@
     </div>
   </div>
 </section>
-<section class="section dark" id="contact"><div class="wrap contact"><div><p class="label pale">06 / CONTACT</p><h2>お問い合わせ</h2><p class="en pale">Contact</p><p>税務・会計顧問、バックオフィス支援などのご相談はこちらからお問い合わせください。内容を確認のうえ、担当者よりご連絡いたします。</p></div><form><label>会社名 <small>任意</small><input></label><label>お名前 <small>必須</small><input required></label><label>メールアドレス <small>必須</small><input type="email" required></label><label>電話番号 <small>任意</small><input></label><label>お問い合わせ内容 <small>必須</small><textarea rows="6" required></textarea></label><label class="check"><input type="checkbox" required> 個人情報の取扱いに同意します</label><button>送信する →</button><p class="note">※ 現在はデザイン確認用です。info@staxconsul.com へのメール送信とCloudflare Turnstileは次工程で実装します。</p></form></div></section>
+<section class="section contact-section" id="contact">
+  <div class="wrap">
+    <p class="label">06 / CONTACT</p>
+
+    <div class="contact-layout">
+      <div class="contact-copy">
+        <h2>お気軽にご相談ください。</h2>
+        <p class="en">Contact</p>
+
+        <p class="contact-intro">
+          税務・会計顧問、バックオフィス支援、上場準備企業の税務に関するご相談など、
+          お気軽にお問い合わせください。内容を確認のうえ、担当者よりご連絡いたします。
+        </p>
+
+        <div class="contact-info-card">
+          <div class="contact-mail-icon" aria-hidden="true">✉</div>
+          <div>
+            <div class="contact-info-label">お問い合わせ先</div>
+            <a href="mailto:info@staxconsul.com">info@staxconsul.com</a>
+          </div>
+          <div class="contact-response">
+            通常2～3営業日以内にご連絡いたします。
+          </div>
+        </div>
+      </div>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="【Shimizu Lab】Webサイトからのお問い合わせ">
+
+        <div class="form-grid">
+          <label>
+            <span>会社名 <small>（任意）</small></span>
+            <input type="text" name="company" placeholder="例）株式会社サンプル">
+          </label>
+
+          <label>
+            <span>お名前 <small>（必須）</small></span>
+            <input type="text" name="name" placeholder="例）清水 裕久" required>
+          </label>
+
+          <label>
+            <span>メールアドレス <small>（必須）</small></span>
+            <input type="email" name="email" placeholder="例）sample@example.com" required>
+          </label>
+
+          <label>
+            <span>電話番号 <small>（任意）</small></span>
+            <input type="tel" name="phone" placeholder="例）03-1234-5678">
+          </label>
+
+          <label class="form-full">
+            <span>お問い合わせ内容 <small>（必須）</small></span>
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="ご相談内容・ご質問などをご入力ください。"
+              required
+            ></textarea>
+          </label>
+        </div>
+
+        <label class="privacy-consent">
+          <input type="checkbox" name="privacy_agree" value="同意する" required>
+          <span><a href="#" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する <small>（必須）</small></span>
+        </label>
+
+        <button type="submit" class="contact-submit">送信する <span>→</span></button>
+
+        <p class="contact-privacy-note">
+          お客様の個人情報は、お問い合わせ対応のためにのみ使用いたします。
+        </p>
+
+        <p class="form-setup-note">
+          ※ フォーム送信を有効にするには、Formspreeでフォームを作成後、
+          <code>REPLACE_WITH_FORM_ID</code> を発行されたフォームIDに置き換えてください。
+        </p>
+      </form>
+    </div>
+
+    <p class="contact-bottom-note">
+      お問い合わせ内容を確認のうえ、通常2～3営業日以内にご連絡いたします。
+    </p>
+  </div>
+</section>
 </main>
 <footer><div class="wrap foot"><div><b>Shimizu Lab</b><p>Tax &amp; Back Office</p></div><div><p>税理士 清水 裕久</p><p>税理士法人G&amp;Sソリューションズ 代表社員</p><p>税理士登録番号 136938</p></div><div>© 2026 Shimizu Lab.</div></div></footer>
 </body>
