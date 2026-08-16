@@ -1621,3 +1621,45 @@ footer{
     padding-right:14px;
   }
 }
+
+
+/* =========================================================
+   Mobile fixed header
+   ========================================================= */
+
+@media (max-width:900px){
+  header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    z-index:1000;
+  }
+
+  body{
+    padding-top:72px;
+  }
+
+  .nav{
+    min-height:72px;
+  }
+
+  .mobile-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    z-index:1001;
+  }
+
+  section[id]{
+    scroll-margin-top:88px;
+  }
+}
+
+@media (max-width:600px){
+  body{
+    padding-top:72px;
+  }
+}
