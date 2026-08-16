@@ -1094,3 +1094,81 @@ footer{
   color:#4d4d4d;
   font-size:.9rem;
 }
+
+
+.footer-right a{
+  margin-left:14px;
+  color:inherit;
+  text-decoration:none;
+}
+
+.footer-right a:hover{
+  color:var(--brand-blue);
+}
+
+.privacy-section{
+  background:var(--white);
+}
+
+.privacy-wrap{
+  max-width:920px;
+}
+
+.privacy-wrap h1{
+  margin:0;
+  font-size:clamp(2.4rem,5vw,4.3rem);
+  line-height:1.25;
+  letter-spacing:-.04em;
+  font-weight:700;
+}
+
+.privacy-content{
+  margin-top:46px;
+  color:#404040;
+}
+
+.privacy-content > p:first-child{
+  font-size:1.02rem;
+}
+
+.privacy-content section{
+  padding:28px 0;
+  border-top:1px solid var(--line);
+}
+
+.privacy-content h2{
+  margin:0 0 14px;
+  font-size:1.3rem;
+  line-height:1.5;
+}
+
+.privacy-content p{
+  margin:0;
+}
+
+.privacy-content ul{
+  margin:10px 0 0;
+  padding-left:1.4em;
+}
+
+.privacy-content li{
+  margin:6px 0;
+}
+
+.privacy-content a{
+  color:var(--brand-blue);
+}
+
+.privacy-back{
+  margin-top:38px;
+}
+
+.privacy-back a{
+  color:var(--brand-blue);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.privacy-back a:hover{
+  text-decoration:underline;
+}
