@@ -1471,3 +1471,30 @@ footer{
     font-size: 2.25rem;
   }
 }
+
+
+/* Mobile heading wrap fix */
+.mobile-break{
+  display:none;
+}
+
+@media (max-width: 600px){
+  .mobile-break{
+    display:inline;
+  }
+
+  .hero h1,
+  .profile-title h2,
+  .contact-copy h2,
+  .intro h2{
+    max-width:100%;
+    word-break:normal;
+    overflow-wrap:anywhere;
+  }
+
+  .hero h1{
+    font-size:2.2rem;
+    line-height:1.32;
+    letter-spacing:-.035em;
+  }
+}
