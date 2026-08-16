@@ -1498,3 +1498,21 @@ footer{
     letter-spacing:-.035em;
   }
 }
+
+
+/* PROFILE mobile heading break */
+.profile-mobile-break{
+  display:none;
+}
+
+@media (max-width:600px){
+  .profile-mobile-break{
+    display:inline;
+  }
+
+  .profile-title h2{
+    font-size:1.9rem;
+    line-height:1.38;
+    letter-spacing:-.03em;
+  }
+}
