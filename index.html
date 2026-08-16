@@ -3,232 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Shimizu Lab — 税務、不動産、テクノロジーを中心に、日々の研究・実践・試行錯誤を記録する個人ラボ。">
-  <title>Shimizu Lab | Tax × Real Estate × Technology</title>
-  <style>
-    :root {
-      --bg: #f7f7f5;
-      --surface: #ffffff;
-      --text: #172033;
-      --muted: #667085;
-      --line: #e4e7ec;
-      --accent: #1d4ed8;
-      --accent-soft: #eff6ff;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      color: var(--text);
-      background: var(--bg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
-      line-height: 1.7;
-    }
-
-    .wrap {
-      width: min(1080px, calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    header {
-      background: rgba(247, 247, 245, 0.92);
-      border-bottom: 1px solid var(--line);
-    }
-
-    nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      font-size: 1.15rem;
-      font-weight: 750;
-      letter-spacing: .02em;
-    }
-
-    .nav-note {
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
-    main {
-      padding: 88px 0 72px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 6px 11px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: .82rem;
-      font-weight: 700;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      max-width: 820px;
-      margin: 0;
-      font-size: clamp(3rem, 8vw, 6.8rem);
-      line-height: .98;
-      letter-spacing: -.055em;
-    }
-
-    .tagline {
-      margin: 28px 0 0;
-      font-size: clamp(1.2rem, 2.4vw, 1.75rem);
-      font-weight: 650;
-      letter-spacing: -.02em;
-    }
-
-    .intro {
-      max-width: 720px;
-      margin: 20px 0 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 72px;
-    }
-
-    .card {
-      min-height: 230px;
-      padding: 28px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-    }
-
-    .number {
-      color: var(--accent);
-      font-size: .8rem;
-      font-weight: 750;
-      letter-spacing: .08em;
-    }
-
-    h2 {
-      margin: 28px 0 10px;
-      font-size: 1.35rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: .96rem;
-    }
-
-    .status {
-      margin-top: 72px;
-      padding: 28px;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .status strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .status span {
-      color: var(--muted);
-      font-size: .92rem;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      flex: 0 0 10px;
-      border-radius: 50%;
-      background: #16a34a;
-      box-shadow: 0 0 0 6px #dcfce7;
-    }
-
-    footer {
-      padding: 28px 0 40px;
-      color: var(--muted);
-      font-size: .85rem;
-    }
-
-    @media (max-width: 760px) {
-      .nav-note { display: none; }
-      main { padding-top: 60px; }
-      .grid { grid-template-columns: 1fr; margin-top: 52px; }
-      .card { min-height: auto; }
-      .status { align-items: flex-start; }
-    }
-  </style>
+  <meta name="description" content="Shimizu Lab｜スタートアップ・成長企業のための税務・会計・バックオフィス支援。">
+  <title>Shimizu Lab | 税務・会計から、成長を支えるバックオフィスへ。</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav aria-label="メインナビゲーション">
-        <div class="brand">Shimizu Lab</div>
-        <div class="nav-note">Independent research &amp; practice</div>
-      </nav>
-    </div>
-  </header>
+<header><div class="wrap nav"><a class="brand" href="#top">Shimizu Lab</a><nav><a href="#knowledge">Knowledge</a><a href="#services">Services &amp; Pricing</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">FOR STARTUPS &amp; GROWING BUSINESSES</p><h1>税務・会計から、<br>成長を支えるバックオフィスへ。</h1><p class="en">Tax &amp; Back Office, Built for Growth.</p><p class="lead">税務・会計だけでなく、バックオフィスの構築から企業の成長に応じた体制づくりまで。スタートアップ・成長企業の経営を、実務の側から支援します。</p><a class="link" href="#services">サービスを見る →</a></div><div class="mark">SL</div></div></section>
 
-  <main>
-    <div class="wrap">
-      <span class="eyebrow">Personal Lab</span>
-      <h1>Shimizu<br>Lab.</h1>
-      <p class="tagline">Tax × Real Estate × Technology</p>
-      <p class="intro">
-        税務、不動産、テクノロジーを中心に、日々の研究・実践・試行錯誤を記録する個人ラボ。
-        実務で得た知見や、新しい仕組みを試す過程を少しずつ公開していきます。
-      </p>
+<section class="section bordered" id="expertise"><div class="wrap"><p class="label">02 / EXPERTISE</p><div class="intro"><div><h2>スタートアップの成長を、実務の側から支える。</h2><p class="en">Our Expertise</p></div><p>税務・会計とバックオフィスの実務経験をもとに、創業から成長、上場準備まで、企業が次のステージへ進むための基盤づくりを支援します。</p></div><div class="cards three">
+<article><span>01</span><h3>スタートアップ・成長企業支援</h3><p class="en small">Startup &amp; Growth</p><p>創業期から成長期まで、企業のステージに応じて変化する税務・会計・バックオフィスの課題に対応します。</p></article>
+<article><span>02</span><h3>税務・会計・バックオフィス</h3><p class="en small">Tax &amp; Back Office</p><p>税務・会計に加え、クラウド会計の導入、経理フローの構築、月次決算、支払・納税、給与計算まで、創業期に必要な業務を一体的に支援します。</p></article>
+<article><span>03</span><h3>上場準備</h3><p class="en small">IPO Preparation</p><p>上場準備企業に対し、税務・会計上の課題整理や、企業の成長に対応したバックオフィス・管理体制の整備を支援します。</p></article>
+</div></div></section>
 
-      <section class="grid" aria-label="研究テーマ">
-        <article class="card">
-          <span class="number">01 / TAX</span>
-          <h2>Tax</h2>
-          <p>税務に関する制度・実務を調べ、複雑なテーマを分かりやすく整理します。</p>
-        </article>
+<section class="section" id="knowledge"><div class="wrap"><p class="label">03 / KNOWLEDGE</p><div class="intro"><div><h2>実務に役立つ知識を、体系的に。</h2><p class="en">Knowledge &amp; Insights</p></div><p>会社を運営するうえで必要となる税務・会計やバックオフィスの知識を、実務の流れに沿って体系的に整理しています。</p></div><div class="cards two">
+<article><span>01</span><h3>起業家のためのバックオフィス業務の基礎知識</h3><p class="en small">Back Office Basics for Entrepreneurs</p><p>会社設立から日々の経理・給与計算、税務、資金繰り、株主総会まで。起業家が会社を運営するうえで知っておきたいバックオフィスの基礎を、実務の流れに沿って解説します。</p><a class="link" href="#">詳しく見る →</a></article>
+<article><span>02</span><h3>上場準備と税務</h3><p class="en small">IPO Preparation &amp; Tax</p><p>上場を目指す企業が直面する税務上の論点や、上場準備に伴って必要となる税務・会計、管理体制について、実務の視点から解説します。</p><a class="link" href="#">詳しく見る →</a></article>
+</div></div></section>
 
-        <article class="card">
-          <span class="number">02 / REAL ESTATE</span>
-          <h2>Real Estate</h2>
-          <p>不動産投資、賃貸経営、資産形成に関する研究や実践を記録します。</p>
-        </article>
+<section class="section soft" id="services"><div class="wrap"><p class="label">04 / SERVICES</p><div class="intro"><div><h2>企業に合わせた、税務とバックオフィス支援。</h2><p class="en">Services &amp; Pricing</p></div><p>必要な税務・会計、バックオフィスの体制は、事業内容や組織規模によって異なります。税務・会計顧問を基本に、それぞれの企業に必要な業務を組み合わせてサポートします。</p></div><div class="cards two">
+<article><span>01</span><h3>税務・会計顧問</h3><p class="en small">Tax &amp; Accounting</p><p>日々の税務相談から月次決算、決算・税務申告まで、企業活動の基盤となる税務・会計業務を継続的にサポートします。上場準備企業については、税務・会計を中心とした上場準備上の課題にも対応します。</p></article>
+<article><span>02</span><h3>バックオフィス支援</h3><p class="en small">Back Office Support</p><p>クラウド会計の導入、経理フローの構築、記帳代行、支払・納税、給与計算など、創業期に必要となるバックオフィス業務を支援します。企業の成長に応じて、業務の内製化や他の専門家への移管も含め、適切な体制への移行をサポートします。</p></article>
+</div><p><a class="button" href="#">サービス・料金を詳しく見る</a></p></div></section>
 
-        <article class="card">
-          <span class="number">03 / TECHNOLOGY</span>
-          <h2>Technology</h2>
-          <p>AIやクラウド、自動化を使って、仕事や日常をより効率的にする方法を試します。</p>
-        </article>
-      </section>
+<section class="section" id="profile"><div class="wrap"><p class="label">05 / PROFILE</p><div class="profile"><div><img src="assets/profile.png" alt="清水裕久 プロフィール写真"></div><div><h2>代表プロフィール</h2><p class="en">Profile</p><div class="name"><h3>清水 裕久</h3><p class="en small">Hirohisa Shimizu</p><p>税理士（登録番号 136938）<br>税理士法人G&amp;Sソリューションズ 代表社員</p></div><h3 class="catch">「外から支援する」だけではなく、会社の中で上場準備を経験。</h3><p>税理士法人で税務実務を経験した後、上場準備企業2社の管理部門に勤務。シルバーライフでは取締役管理部長として管理部門の立ち上げに携わり、サンバイオでは経営管理部シニアマネジャーとして、上場準備から上場後まで管理部門全般の実務を経験しました。</p><p>監査法人・証券会社への対応、経理体制の構築、労務・社内規程の整備、開示、機関運営、株式事務など、企業の成長に伴って必要となる内部管理体制を、外部専門家ではなく事業会社の当事者として構築してきたことが、現在の支援の原点です。</p><p>独立後もこの経験を活かし、スタートアップを中心に、税務・会計だけでなく、創業期のバックオフィス業務の構築・運用から、企業の成長に応じた内部管理体制への移行までを支援しています。</p><p>現在の顧問先にも、上場企業やその子会社、監査法人とのやり取りが本格化した上場準備企業が多く含まれています。</p></div></div>
+<div class="career"><h3>経歴</h3><p class="en small">Career</p>
+<div class="row"><b>2008.09</b><div><strong>清新税理士法人</strong><em>現・Moore至誠税理士法人</em><p>税務実務に従事。</p></div></div>
+<div class="row"><b>2013.01–2014.10</b><div><strong>株式会社シルバーライフ</strong><em>取締役管理部長</em><p>上場準備の開始に伴い管理部門を立ち上げ。監査法人・証券会社への対応、経理体制の構築、労務・各種規程の整備など、内部管理体制の構築に従事。</p></div></div>
+<div class="row"><b>2014.11–2017.11</b><div><strong>サンバイオ株式会社</strong><em>経営管理部 シニアマネジャー</em><p>上場準備から上場後まで、監査法人・証券会社への対応、開示書類の作成、経理体制の構築、労務・各種規程の整備、株主総会・取締役会の運営、ストックオプション管理を含む株式事務など、管理部門全般に従事。</p></div></div>
+<div class="row"><b>2017.12</b><div><strong>清水裕久税理士事務所</strong><p>開設。</p></div></div>
+<div class="row"><b>2020.02</b><div><strong>エス・タックス税理士法人</strong><p>設立・代表社員就任。</p></div></div>
+<div class="row"><b>2024.09</b><div><strong>税理士法人G&amp;Sソリューションズ</strong><p>税理士法人G&amp;Sソリューションズとの合併に伴い、代表社員就任。</p></div></div>
+</div></div></section>
 
-      <section class="status" aria-label="サイトの状態">
-        <div>
-          <strong>Shimizu Lab is now online.</strong>
-          <span>GitHubとCloudflareを連携して、このサイトを自動デプロイしています。</span>
-        </div>
-        <div class="dot" title="Online"></div>
-      </section>
-    </div>
-  </main>
+<section class="section bordered" id="office"><div class="wrap"><p class="label">06 / OFFICE &amp; ACCESS</p><div class="office"><div><h2>事務所概要・アクセス</h2><p class="en">Office &amp; Access</p><dl><dt>名称</dt><dd>Shimizu Lab</dd><dt>代表</dt><dd>税理士 清水 裕久<br>税理士法人G&amp;Sソリューションズ 代表社員</dd><dt>所在地</dt><dd>〒104-0031<br>東京都中央区京橋三丁目13番10号<br>中島ゴールドビル 8階</dd><dt>アクセス</dt><dd>東京メトロ銀座線「京橋駅」1番出口 徒歩4分<br>都営浅草線「宝町駅」A1出口 徒歩1分</dd><dt>TEL</dt><dd>03-6228-7163</dd></dl></div><div class="map">MAP<br><small>Google Maps は次の実装工程で埋め込みます</small></div></div></div></section>
 
-  <footer>
-    <div class="wrap">
-      © 2026 Shimizu Lab.
-    </div>
-  </footer>
+<section class="section dark" id="contact"><div class="wrap contact"><div><p class="label pale">07 / CONTACT</p><h2>お問い合わせ</h2><p class="en pale">Contact</p><p>税務・会計顧問、バックオフィス支援などのご相談はこちらからお問い合わせください。内容を確認のうえ、担当者よりご連絡いたします。</p></div><form><label>会社名 <small>任意</small><input></label><label>お名前 <small>必須</small><input required></label><label>メールアドレス <small>必須</small><input type="email" required></label><label>電話番号 <small>任意</small><input></label><label>お問い合わせ内容 <small>必須</small><textarea rows="6" required></textarea></label><label class="check"><input type="checkbox" required> 個人情報の取扱いに同意します</label><button>送信する →</button><p class="note">※ 現在はデザイン確認用です。info@staxconsul.com へのメール送信とCloudflare Turnstileは次工程で実装します。</p></form></div></section>
+</main>
+<footer><div class="wrap foot"><div><b>Shimizu Lab</b><p>Tax &amp; Back Office</p></div><div><p>税理士 清水 裕久</p><p>税理士法人G&amp;Sソリューションズ 代表社員</p><p>税理士登録番号 136938</p></div><div>© 2026 Shimizu Lab.</div></div></footer>
 </body>
 </html>
