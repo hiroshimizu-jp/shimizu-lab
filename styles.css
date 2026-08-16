@@ -1668,3 +1668,23 @@ footer{
 @media(max-width:1000px){.knowledge-jumps{grid-template-columns:repeat(4,1fr)}.knowledge-index-layout{grid-template-columns:1fr}.knowledge-sidebar{position:static}.knowledge-sidebar-box{display:none}}
 @media(max-width:900px){.knowledge-category{grid-template-columns:1fr}.knowledge-category-head{border-right:0;border-bottom:1px solid var(--line)}.next-knowledge-box{grid-template-columns:1fr}}
 @media(max-width:600px){.knowledge-hub-hero h1{font-size:2.1rem}.knowledge-hub-lead br{display:none}.knowledge-jumps{grid-template-columns:repeat(2,1fr)}.knowledge-jump{min-height:105px}.knowledge-category-head{padding:24px 20px}.knowledge-article-row{align-items:flex-start;padding:16px 14px}.knowledge-article-title{gap:10px;font-size:.9rem}.knowledge-row-arrow{display:none}.status{white-space:nowrap}.next-knowledge-box{padding:24px 20px}}
+
+
+/* Knowledge category menu alignment refinement */
+.knowledge-jump{
+  justify-content:flex-start;
+  padding-top:24px;
+}
+.knowledge-jump span{
+  display:block;
+  height:30px;
+  line-height:30px;
+  margin-bottom:8px;
+}
+.knowledge-jump strong{
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  min-height:3em;
+  line-height:1.5;
+}
