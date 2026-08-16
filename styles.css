@@ -45,9 +45,12 @@ header{
 }
 
 .brand{
-  color:var(--brand-blue);
-  font-weight:700;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:1px;
   text-decoration:none;
+  line-height:1.25;
 }
 
 .nav nav{display:flex;gap:26px}
@@ -340,4 +343,17 @@ footer{
   .office dl{grid-template-columns:1fr}
   .office dt{padding-bottom:0}
   .office dd{border-top:0;padding-top:2px}
+}
+
+.brand-main{
+  color:var(--text);
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.brand-sub{
+  color:var(--brand-blue);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.04em;
 }
