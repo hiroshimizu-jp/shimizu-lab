@@ -45,26 +45,9 @@ header{
 }
 
 .brand{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:1px;
-  text-decoration:none;
-  line-height:1.25;
-}
-
-.brand-main{
-  color:var(--text);
-  font-size:1rem;
-  font-weight:700;
-  letter-spacing:.02em;
-}
-
-.brand-sub{
   color:var(--brand-blue);
-  font-size:.72rem;
-  font-weight:600;
-  letter-spacing:.04em;
+  font-weight:700;
+  text-decoration:none;
 }
 
 .nav nav{display:flex;gap:26px}
@@ -76,10 +59,34 @@ header{
 }
 .nav nav a:hover{color:var(--brand-blue)}
 
-.hero,.section{padding:108px 0}
-.hero{padding-top:126px;padding-bottom:118px}
 
-.hero-grid,.intro,.profile,.office,.contact{
+.hero-banner{
+  width:100%;
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+}
+
+.hero-banner img{
+  display:block;
+  width:100%;
+  height:clamp(220px,24vw,360px);
+  object-fit:cover;
+  object-position:center 40%;
+  filter:grayscale(100%);
+}
+
+.hero-single{
+  max-width:1120px;
+}
+
+.hero-single > *{
+  max-width:900px;
+}
+
+.hero,.section{padding:108px 0}
+.hero{padding-top:74px;padding-bottom:96px}
+
+.intro,.profile,.office,.contact{
   display:grid;
   grid-template-columns:1.35fr .65fr;
   gap:72px;
@@ -94,7 +101,7 @@ header{
 }
 
 .hero h1{
-  max-width:780px;
+  max-width:940px;
   font-size:clamp(3.1rem,5.2vw,5.05rem);
   line-height:1.18;
   letter-spacing:-.045em;
@@ -126,17 +133,6 @@ header{
 
 .link:hover{text-decoration:underline}
 
-.mark{
-  aspect-ratio:1;
-  display:grid;
-  place-items:center;
-  background:var(--white);
-  border:2px solid rgba(57,177,233,.22);
-  border-radius:28px;
-  color:rgba(184,159,128,.48);
-  font-size:8rem;
-  font-weight:700;
-}
 
 .bordered{
   border-top:1px solid var(--line);
@@ -325,14 +321,17 @@ footer{
 
 @media(max-width:900px){
   .nav nav{display:none}
-  .hero-grid,.intro,.profile,.office,.contact,.foot,.cards.three,.cards.two{grid-template-columns:1fr}
-  .mark{display:none}
+  .intro,.profile,.office,.contact,.foot,.cards.three,.cards.two{grid-template-columns:1fr}
   .intro{gap:18px}
   .profile img{max-width:520px}
   .row{grid-template-columns:1fr;gap:4px}
 }
 
 @media(max-width:600px){
+
+  .hero-banner img{
+    height:190px;
+  }
   body{font-size:16px}
   .wrap{width:calc(100% - 28px)}
   .hero,.section{padding:76px 0}
