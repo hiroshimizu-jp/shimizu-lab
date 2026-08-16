@@ -1,0 +1,15 @@
+{
+  "name": "Shimizu Lab",
+  "short_name": "Shimizu Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#39B1E9",
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
