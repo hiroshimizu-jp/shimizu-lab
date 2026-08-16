@@ -11,7 +11,21 @@
 <header><div class="wrap nav"><a class="brand" href="#top">
   <span class="brand-main">税理士 清水裕久</span>
   <span class="brand-sub">Shimizu Lab</span>
-</a><nav><a href="#knowledge">Knowledge</a><a href="#services">Services &amp; Pricing</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav></div></header>
+</a><nav><a href="#knowledge">Knowledge</a><a href="#services">Services &amp; Pricing</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav>
+    <button class="mobile-menu-button" type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+      <span>MENU</span>
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#knowledge">Knowledge</a>
+      <a href="#services">Services &amp; Pricing</a>
+      <a href="#profile">Profile</a>
+      <a href="#contact">Contact</a>
+    </div></div></header>
 <main id="top">
 <section class="hero-banner" aria-label="イメージ画像">
   <img src="assets/hero-banner.jpg" alt="">
@@ -374,5 +388,41 @@
 </section>
 </main>
 <footer><div class="wrap foot"><div><b>Shimizu Lab</b><p>Tax &amp; Back Office</p></div><div><p>税理士 清水 裕久</p><p>税理士法人G&amp;Sソリューションズ 代表社員</p><p>税理士登録番号 136938</p></div><div class="footer-right">© 2026 Shimizu Lab. <a href="privacy.html">Privacy Policy</a></div></div></footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelector(".mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+  if (!button || !menu) return;
+
+  function closeMenu() {
+    menu.hidden = true;
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", "メニューを開く");
+    document.body.classList.remove("menu-open");
+  }
+
+  button.addEventListener("click", function () {
+    const isOpen = button.getAttribute("aria-expanded") === "true";
+    if (isOpen) {
+      closeMenu();
+    } else {
+      menu.hidden = false;
+      button.setAttribute("aria-expanded", "true");
+      button.setAttribute("aria-label", "メニューを閉じる");
+      document.body.classList.add("menu-open");
+    }
+  });
+
+  menu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeMenu);
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 900) closeMenu();
+  });
+});
+</script>
+
 </body>
 </html>
