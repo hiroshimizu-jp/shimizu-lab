@@ -1075,15 +1075,6 @@ footer{
   font-size:.82rem;
 }
 
-.form-setup-note{
-  margin:12px 0 0;
-  padding:10px 12px;
-  border-radius:6px;
-  background:#fff8e8;
-  color:#6d5b3e;
-  font-size:.78rem;
-}
-
 .form-setup-note code{
   font-family:Consolas,Monaco,monospace;
 }
